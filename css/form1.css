@@ -1,0 +1,62 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 1.5rem;
+    border: 2px solid;
+    padding: 1.2rem;
+}
+p{
+    font-size: 0.8rem;
+  
+}
+.formdiv p{
+  visibility: hidden;
+  color: red;
+  text-align: center;
+
+}
+.formdiv span.success{
+   color: green;
+   visibility: hidden;
+}
+.formdiv span.error{
+    color: red;
+    visibility: hidden;
+}
+
+.formdiv.error p{
+    visibility: visible;
+}
+
+.formdiv.error span.error{
+    visibility: visible;
+}
+
+.formdiv.error input{
+    border-color: red;
+}
+
+.formdiv.success input{
+    border-color: green;
+}
+
+
+.formdiv.success span.success{
+ 
+    visibility: visible;
+}
